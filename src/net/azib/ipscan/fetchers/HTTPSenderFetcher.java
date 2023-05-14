@@ -15,7 +15,7 @@ import net.azib.ipscan.config.ScannerConfig;
  */
 public class HTTPSenderFetcher extends PortTextFetcher {
 	public HTTPSenderFetcher(ScannerConfig scannerConfig) {
-		super(scannerConfig, 80, "HEAD / HTTP/1.0\r\n\r\n", "Date: (.*)$");
+		super(scannerConfig, 443, "HEAD / HTTP/1.0\r\n\r\n", "Date: (.*)$");
 	}
 	
 	public String getId() {
